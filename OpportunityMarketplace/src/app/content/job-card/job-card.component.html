@@ -8,9 +8,9 @@
                 <!-- Date Pill -->
                 <div class="flex flex-none flex-inline justify-between w-full items-center">
                     <div class="bg-white datePill text-xl font-semibold"> {{listing.date}}</div>
-                    <button class="bg-white rounded-full h-14 w-14" style="font-size: 20px;" (click)="toggleIcon(i)">
-                        <i class="pi"
-                            [ngClass]="{'pi-bookmark-fill': listing.isBookmarked, 'pi-bookmark': !listing.isBookmarked}"></i>
+                    <button class="bg-white rounded-full h-14 w-14 active:bg-gray-200" style="font-size: 20px;" (click)="toggleIcon(i)">
+                        <i class="pi "
+                            [ngClass]="{'pi-bookmark-fill': listing.isBookmarked, 'pi-bookmark': !listing.isBookmarked} "></i>
                     </button>
                 </div>
 
@@ -50,7 +50,7 @@
 
                 <!-- Details Button -->
                 <div>
-                    <button class="bg-black px-2 py-3 rounded-full text-gray-200 w-28 text-xl">Details</button>
+                    <button class="bg-black px-2 py-3 rounded-full text-gray-200 w-28 text-xl active:bg-gray-700">Details</button>
                 </div>
             </div>
 

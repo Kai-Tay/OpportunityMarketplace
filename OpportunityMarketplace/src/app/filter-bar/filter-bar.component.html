@@ -1,19 +1,69 @@
-<div class="flex items-center justify-between  navBar h-48">
+<div class="flex flex-inline items-center justify-around navBar h-48">
 
-    <div class="inline-flex space-x-20 ml-16">
-      <!-- Logo or Brand Name -->
-      <div class="text-white text-lg font-bold">LuckyJob</div>
-  
-      <!-- Navigation Links -->
-      <div class="align-middle space-x-8">
-        <a href="#" class="text-gray-300 hover:text-white">Find job</a>
-        <a href="#" class="text-gray-300 hover:text-white">Messages</a>
-        <a href="#" class="text-gray-300 hover:text-white">Hiring</a>
-        <a href="#" class="text-gray-300 hover:text-white">Community</a>
-        <a href="#" class="text-gray-300 hover:text-white">FAQ</a>
-      </div>
+  <!-- Search Job Type -->
+  <div class="flex flex-col h-16 justify-center p-10">
+    <div class="flex flex-inline">
+      <app-circular-icon iconClass="pi-search"></app-circular-icon>
+      <select class="filterDropdown font-semibold px-4 text-white">
+        <option value="" disabled selected hidden>Job Type</option>
+        <option value="designer" >Designer</option>
+        <option value="jobType2">jobType2</option>
+        <option value="jobType3">jobType3</option>
+      </select>
     </div>
-  
-  
-  
+  </div>
+
+  <div class="h-16 seperator"></div>
+
+  <!-- Location -->
+  <div class="flex flex-col h-16 justify-center p-10">
+    <div class="flex flex-inline">
+      <app-circular-icon iconClass="pi-map-marker"></app-circular-icon>
+      <select class="filterDropdown font-semibold px-4 text-white">
+        <option value="" disabled selected hidden>Work Location</option>
+        <option value="location1">location1</option>
+        <option value="location2">location2</option>
+        <option value="location3">location3</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="h-16 seperator"></div>
+
+  <!-- Experience -->
+  <div class="flex flex-col h-16 justify-center p-10">
+    <div class="flex flex-inline">
+      <app-circular-icon iconClass="pi-briefcase"></app-circular-icon>
+      <select class="filterDropdown font-semibold px-4 text-white">
+        <option value="" disabled selected hidden>Experience</option>
+        <option value="experience1">experience1</option>
+        <option value="experience2">experience2</option>
+        <option value="experience3">experience3</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="h-16 seperator"></div>
+
+  <!-- Pay -->
+  <div class="flex flex-col h-16 justify-center p-10">
+    <div class="flex flex-inline">
+      <app-circular-icon iconClass="pi-wallet"></app-circular-icon>
+      <select class="filterDropdown font-semibold px-4 text-white">
+        <option value="" disabled selected hidden>Pay</option>
+        <option value="experience1">Per month</option>
+        <option value="experience2">Per hour</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="h-16 seperator"></div>
+
+  <!-- Salary Range -->
+  <div>
+    <div class="text-white mb-5">Salary Range</div>
+    <p-slider  [range]="false" styleClass="w-96" />
+  </div>
+
+
 </div>

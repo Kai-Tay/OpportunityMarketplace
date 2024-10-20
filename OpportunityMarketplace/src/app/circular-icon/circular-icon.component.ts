@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <button class="bg-black rounded-full border-gray-600 border-2 h-10 w-10" style="font-size: 20px;">
+    <button class="text-white bg-black rounded-full border-gray-600 border-2 h-10 w-10" style="font-size: 20px;">
     <i class="pi" [class]="iconClass"></i></button>
     `,
   styleUrl: './circular-icon.component.css'

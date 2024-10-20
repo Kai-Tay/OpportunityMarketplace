@@ -1,5 +1,32 @@
 .navBar{
     background-color: #141413;
-    color: white;
     border-bottom: grey 5px solid;
+}
+
+.filterDropdown {
+    background-color: transparent;
+  }
+  
+.filterDropdown::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(0%);
+    width: 0;
+    height: 0;
+    pointer-events: none;
+  }
+
+.filterDropdown:focus {
+  outline: none;
+  box-shadow: none; 
+}
+
+select:invalid {
+    color: grey; 
+  }
+
+.seperator{
+    border: 1px solid #f2f2f2;
 }

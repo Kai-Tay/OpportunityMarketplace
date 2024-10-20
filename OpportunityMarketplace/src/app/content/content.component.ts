@@ -28,7 +28,7 @@ export class ContentComponent {
       "id": 2,
       "organisationTitle": "Creative Studios Co.",
       "organisationIcon": "https://via.placeholder.com/50",
-      "opportunityTitle": "Freelance Graphic Designer",
+      "opportunityTitle": "Graphic Designer",
       "tags": ["Part time", "Flexible schedule","Project work", "Distant work"],
       "date": "18 October, 2024",
       "salary": 50,
