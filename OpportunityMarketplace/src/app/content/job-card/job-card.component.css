@@ -1,0 +1,18 @@
+.jobCard {
+    border-radius: 25px;
+    border: 1px solid rgb(180, 180, 180);
+    height: 40vh;
+}
+
+.innerJobCard{
+    background-color: #ebeff5;
+    border-radius: 20px;
+    width: 100%;
+    height: 85%;
+}
+
+.datePill {
+    width: fit-content;
+    padding: 15px;
+    border-radius: 30px;
+}

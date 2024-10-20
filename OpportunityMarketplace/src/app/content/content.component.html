@@ -1,7 +1,7 @@
 <div class="flex flex-row h-full bg-gray-100 ">
     <!-- Sidebar -->
-    <div class="w-80 text-black ">
-        <div class="flex flex-col ml-12 mt-10">
+    <div class="w-96 text-black ">
+        <div class="flex flex-col ml-20 mt-10">
             <!-- Learn More Component -->
             <app-learn-more></app-learn-more>
 
@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    <div class="flex flex-col px-10 w-full">
+    <div class="flex flex-col px-16 w-full">
         <!-- Card Header -->
         <div class="flex mt-10 justify-between">
 
@@ -21,7 +21,7 @@
 
                 <!-- No. of jobs opening -->
                 <div class="jobOpenings text-xl font-bold mx-5 flex items-center justify-center rounded-full px-4">
-                    386
+                    {{jobInfo.length}} 
                 </div>
             </div>
 
@@ -42,7 +42,7 @@
 
         <!-- Job Card Contents -->
         <div>
-            <app-job-card></app-job-card>
+            <app-job-card [jobInfo]="jobInfo"></app-job-card>
         </div>
     </div>
 </div>
