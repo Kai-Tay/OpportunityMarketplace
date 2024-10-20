@@ -1,0 +1,22 @@
+<div class="filterComponent h-screen">
+
+    <h2 class="text-2xl font-semibold mb-8">Filters</h2>
+    <!-- Working Schedule -->
+    <div class="mb-6">
+        <h3 class="text-gray-400 mb-4">Working Schedule</h3>
+        <div *ngFor="let item of schedule">
+            <input type="checkbox" id="check-box">
+            <label class="m-6">{{item.name}}</label>
+        </div>
+    </div>
+
+    <div class="mb-6">
+        <!-- Employment Type -->
+        <h3 class="text-gray-400 mb-4">Employment Type</h3>
+        <div *ngFor="let item of type">
+            <input type="checkbox" id="check-box">
+            <label class="m-6">{{item.name}}</label>
+        </div>
+    </div>
+
+</div>
