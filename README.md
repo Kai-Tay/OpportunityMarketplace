@@ -1,4 +1,4 @@
 # OpportunityMarketplace
  
 Assignment for River Valley Irregulars
-![Screenshot 2024-10-21 at 3 40 21 AM](https://github.com/user-attachments/assets/3941e39c-e9f1-47e2-9e16-b48bdf4111eb)
+<img width="1822" alt="Screenshot 2024-10-21 at 3 44 24 AM" src="https://github.com/user-attachments/assets/084a8294-4ee9-4bdf-a105-1bc7be4613c4">
