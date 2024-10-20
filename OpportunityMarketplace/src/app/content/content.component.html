@@ -1,4 +1,4 @@
-<div class="flex h-full bg-gray-100 ">
+<div class="flex flex-row h-full bg-gray-100 ">
     <!-- Sidebar -->
     <div class="w-80 text-black ">
         <div class="flex flex-col ml-12 mt-10">
@@ -10,9 +10,39 @@
         </div>
     </div>
 
-    <!-- Card Content -->
-    <div>
-            
-    </div>
+    <div class="flex flex-col px-10 w-full">
+        <!-- Card Header -->
+        <div class="flex mt-10 justify-between">
 
+            <!-- RHS -->
+            <div class="flex">
+                <!-- Recommended Jobs Title + Number of jobs -->
+                <h2 class="text-4xl font-bold text-left">Recommended jobs</h2>
+
+                <!-- No. of jobs opening -->
+                <div class="jobOpenings text-xl font-bold mx-5 flex items-center justify-center rounded-full px-4">
+                    386
+                </div>
+            </div>
+
+            <!-- Filter Dropdown -->
+            <div class="flex flex-inline h-full items-center ">
+                <div class="text-gray-500 px-2">Sort by: </div>
+                <select class="filterDropdown font-bold text-black px-4">
+                    <option value="last-updated">Last updated</option>
+                    <option value="oldest-first">Oldest first</option>
+                    <option value="newest-first">Newest first</option>
+                  </select>
+                
+                  <!-- Settings Icon -->
+                  <i class="pi pi-sliders-h" style="font-size: 1.5rem"></i>
+            </div>
+
+        </div>
+
+        <!-- Job Card Contents -->
+        <div>
+            <app-job-card></app-job-card>
+        </div>
+    </div>
 </div>
