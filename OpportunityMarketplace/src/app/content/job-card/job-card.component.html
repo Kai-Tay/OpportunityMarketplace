@@ -7,7 +7,7 @@
             <div class="flex flex-col p-5 innerJobCard ">
                 <!-- Date Pill -->
                 <div class="flex flex-none flex-inline justify-between w-full items-center">
-                    <div class="bg-white datePill text-xl font-semibold"> {{listing.date}}</div>
+                    <div class="bg-white datePill text-lg font-semibold"> {{listing.date}}</div>
                     <button class="bg-white rounded-full h-14 w-14 active:bg-gray-200" style="font-size: 20px;" (click)="toggleIcon(i)">
                         <i class="pi "
                             [ngClass]="{'pi-bookmark-fill': listing.isBookmarked, 'pi-bookmark': !listing.isBookmarked} "></i>
@@ -17,9 +17,9 @@
 
                 <!-- Company + Job Title -->
                 <div class="mt-10  flex-none">
-                    <div class="text-lg"> {{listing.organisationTitle}}</div>
+                    <div class="text-md"> {{listing.organisationTitle}}</div>
                     <div class="flex flex-inline justify-between w-full font-bold items-center">
-                        <div class="text-4xl font-semibold"> {{listing.opportunityTitle}}</div>
+                        <div class="text-3xl font-semibold"> {{listing.opportunityTitle}}</div>
                         <!-- Company icon -->
                         <img [src]="listing.organisationIcon" alt="Organisation Icon"
                             class="w-14 h-14 rounded-full ml-4" />
@@ -33,7 +33,7 @@
                 <!-- Tags -->
                 <div class="flex flex-col justify-end ">
                     <div class="flex flex-wrap">
-                        <div *ngFor="let tag of listing.tags" class="border-2 border-gray-300 text-gray-600 py-2 px-4  rounded-full mr-2 mt-2">
+                        <div *ngFor="let tag of listing.tags" class="border-2 border-gray-300 text-xs font-semibold text-gray-600 py-2 px-2 rounded-full mr-2 mt-2">
                             {{tag}}
                         </div>
                     </div>
@@ -45,12 +45,12 @@
             <div class="flex flex-inline items-center w-full px-3 mt-3 ">
                 <div class="flex-auto">
                     <div class="font-bold text-lg">${{listing.salary}}/hr</div>
-                    <div>{{listing.location}}</div>
+                    <div class="text-gray-400">{{listing.location}}</div>
                 </div>
 
                 <!-- Details Button -->
                 <div>
-                    <button class="bg-black px-2 py-3 rounded-full text-gray-200 w-28 text-xl active:bg-gray-700">Details</button>
+                    <button class="bg-black px-2 py-3 rounded-full text-gray-200 w-28 text-md active:bg-gray-700">Details</button>
                 </div>
             </div>
 
