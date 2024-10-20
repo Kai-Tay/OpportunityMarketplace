@@ -7,8 +7,8 @@
             <div class="flex flex-col p-5 innerJobCard ">
                 <!-- Date Pill -->
                 <div class="flex flex-none flex-inline justify-between w-full items-center">
-                    <div class="bg-white datePill text-lg font-semibold"> {{listing.date}}</div>
-                    <button class="bg-white rounded-full h-14 w-14 active:bg-gray-200" style="font-size: 20px;" (click)="toggleIcon(i)">
+                    <div class="bg-white datePill text-md font-semibold px-3 py-2"> {{listing.date}}</div>
+                    <button class="bg-white rounded-full h-10 w-10 active:bg-gray-200" style="font-size: 20px;" (click)="toggleIcon(i)">
                         <i class="pi "
                             [ngClass]="{'pi-bookmark-fill': listing.isBookmarked, 'pi-bookmark': !listing.isBookmarked} "></i>
                     </button>
@@ -22,7 +22,7 @@
                         <div class="text-3xl font-semibold"> {{listing.opportunityTitle}}</div>
                         <!-- Company icon -->
                         <img [src]="listing.organisationIcon" alt="Organisation Icon"
-                            class="w-14 h-14 rounded-full ml-4" />
+                            class="w-12 h-12 rounded-full ml-4" />
                     </div>
                 </div>
 
